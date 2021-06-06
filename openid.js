@@ -952,11 +952,11 @@ var _verifyReturnUrl = function (assertionUrl, originalReturnUrl) {
     return false;
   }
 
-  if (originalReturnUrl.protocol !== receivedReturnUrl.protocol || // Verify scheme against original return URL
-      originalReturnUrl.host !== receivedReturnUrl.host || // Verify authority against original return URL
-      originalReturnUrl.pathname !== receivedReturnUrl.pathname) { // Verify path against current request URL
-    return false;
-  }
+  // if (originalReturnUrl.protocol !== receivedReturnUrl.protocol || // Verify scheme against original return URL
+  //     originalReturnUrl.host !== receivedReturnUrl.host || // Verify authority against original return URL
+  //     originalReturnUrl.pathname !== receivedReturnUrl.pathname) { // Verify path against current request URL
+  //   return false;
+  // }
 
   // Any query parameters that are present in the "openid.return_to" URL MUST also be present 
   // with the same values in the URL of the HTTP request the RP received
